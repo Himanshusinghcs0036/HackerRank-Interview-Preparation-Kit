@@ -4,7 +4,9 @@ object SockMerchant extends App {
 
   def sockMerchant(n: Int, ar: Array[Int]): Int = {
     var totalPairs = 0
-    println(ar.distinct.foreach(i => ar.filter(_ == i).length))
+    for ( m1 <- ar.distinct ) {
+      totalPairs=totalPairs+((ar.filter(_==m1).length/2).toInt)
+    }
     return totalPairs
   }
 
