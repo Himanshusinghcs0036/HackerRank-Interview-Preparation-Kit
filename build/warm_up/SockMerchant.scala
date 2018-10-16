@@ -7,7 +7,7 @@ object SockMerchant extends App {
     for ( m1 <- ar.distinct ) {
       totalPairs=totalPairs+((ar.filter(_==m1).length/2).toInt)
     }
-    return totalPairs 
+    return totalPairs
   }
 
   var sockArray = Array(1,1,3,1,2,1,3,3,3,3)
